@@ -1,24 +1,14 @@
-import logo from './logo.svg';
+// peer reviewd by Jovann : app brings in data overall look looks awesome data displays but there are no icons for me to see which I think should of been added. I like the responsiveness more time and this app would of been working great.
+
 import './App.css';
+import MainComponent from './component/MainComponent';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MainComponent/>
+    </>
   );
 }
 

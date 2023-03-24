@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 .App {
   text-align: center;
 }
@@ -32,7 +34,295 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+/* navbar component */
+
+.container {
+  --bs-gutter-x: 0 !important;
+  margin-left: 0 !important;
+}
+
+.navbarBg {
+  background-color: #427AA1;
+  height: 6rem;
+}
+
+.weatherTitle {
+  margin-top: 1rem;
+  font-family: 'Comfortaa', cursive;
+  color: white !important;
+}
+
+.navbar-expand {
+  flex-wrap: nowrap;
+}
+
+.searchDiv {
+  margin-right: 0.5rem;
+}
+
+.searchBar {
+  border-radius: 20px;
+  width: 20rem;
+  height: 2.5rem;
+  text-align: center;
+  background-color: #EBF2FA;
+  border-style: none !important;
+  font-family: 'Comfortaa', cursive;
+}
+
+::-webkit-input-placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+  color: black;
+}
+
+.btn {
+  background-color: #427AA1 !important;
+  border-style: none !important;
+  margin-right: 35rem;
+}
+
+/* weather card component */
+.weatherCard {
+  font-family: 'Comfortaa', cursive;
+  width: 50rem;
+  border: 2px solid black !important;
+  border-radius: 10px !important;
+}
+
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  height: 20rem;
+}
+
+.locationCard {
+  height: 3.2rem;
+  font-size: 1.5rem;
+  background-color: #06427E !important;
+  color: white !important;
+  border-bottom: 2px solid black !important;
+  border-top-right-radius: 8.5px !important;
+  border-top-left-radius: 8.5px !important;
+}
+
+.weatherTemp {
+  font-size: 5rem;
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.weatherText {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.starBtn {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 38rem;
+}
+
+.starIcon {
+  margin-left: 37rem;
+}
+
+.weatherBody {
+  background-image: linear-gradient(to right, #6499BE, white);
+  border-bottom-left-radius: 8.5px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
+.ForecastText {
+  white-space: nowrap;
+}
+
+/* forecast weather card */
+
+.forecastCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.forecastFont {
+  font-family: 'Comfortaa', cursive;
+  border: 2px solid black !important;
+  border-radius: 10px !important;
+}
+
+.forecastTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.forecastDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.middleCol {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  height: 16rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.middleText {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+
+.forecastRow {
+  margin-bottom: 2rem;
+}
+
+.tempText {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* 5 day */
+
+.lineCol {
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  height: 14rem;
+}
+
+.fiveDayCard {
+  background-color: #9EC1E4;
+  border-radius: 8.5px !important;
+}
+
+.fiveDayCardMain {
+  width: 50rem;
+  font-family: 'Comfortaa', cursive;
+  border: 2px solid black !important;
+  border-radius: 10px !important;
+}
+
+.fiveDayDiv {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  height: 20rem;
+}
+
+.fiveDayTemp {
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+
+.fiveDayRow {
+  display: flex;
+  justify-content: space-around;
+}
+
+.fiveDayTitleTxt {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.fiveDayTempTitle {
+  color: white;
+}
+
+.fiveDayTempTitleSat {
+  color: white;
+}
+
+/* Bottom Nav */
+.bottomNavDiv {
+  margin-top: 8rem;
+  background-color: #427AA1;
+}
+
+.weatherTitleBottom {
+  margin-top: 1rem;
+  font-family: 'Comfortaa', cursive;
+  color: white !important;
+}
+
+/* mobile */
+
+@media screen and (max-width: 400px) {
+  .weatherTitle {
+    display: none;
+  }
+
+  .searchBar {
+    width: 14rem;
+    margin-left: 3.5rem;
+  }
+
+  .weatherCard {
+    width: 20rem;
+  }
+
+  .locationCard {
+    font-size: 16px;
+    height: 2.5rem;
+  }
+
+  .middleCol {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .middleText {
+    font-size: 15px;
+  }
+
+  .ForecastText {
+    font-size: 15px;
+  }
+
+  .tempText {
+    font-size: 20px;
+  }
+
+  .fiveDayCard {
+    height: 39rem;
+  }
+
+  .fiveDayDiv {
+    height: 40rem;
+  }
+
+  .lineCol {
+    height: 11rem;
+    margin-bottom: 1rem;
+  }
+
+  .fiveDayTempTitleSat {
+    color: white;
+    text-align: center;
+  }
+
+  .satLineCol {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    height: 11rem;
+    margin-left: 7.5rem;
+    margin-right: 7.5rem;
+  }
+
 }
